@@ -40,7 +40,7 @@
             // guna2ProgressBar1
             // 
             this.guna2ProgressBar1.BorderRadius = 10;
-            this.guna2ProgressBar1.Location = new System.Drawing.Point(177, 388);
+            this.guna2ProgressBar1.Location = new System.Drawing.Point(156, 388);
             this.guna2ProgressBar1.Name = "guna2ProgressBar1";
             this.guna2ProgressBar1.Size = new System.Drawing.Size(604, 41);
             this.guna2ProgressBar1.TabIndex = 0;
@@ -60,37 +60,37 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Harlow Solid Italic", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Franklin Gothic Heavy", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(120, 38);
+            this.label1.Location = new System.Drawing.Point(23, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(632, 61);
+            this.label1.Size = new System.Drawing.Size(782, 61);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Pet shop Management System";
+            this.label1.Text = "Online Shop Management System";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Harlow Solid Italic", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Franklin Gothic Heavy", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(389, 163);
+            this.label2.Location = new System.Drawing.Point(374, 197);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 38);
+            this.label2.Size = new System.Drawing.Size(67, 37);
             this.label2.TabIndex = 3;
             this.label2.Text = "%%";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Harrington", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Franklin Gothic Heavy", 20F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(193, 318);
+            this.label3.Location = new System.Drawing.Point(189, 318);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(337, 47);
+            this.label3.Size = new System.Drawing.Size(339, 47);
             this.label3.TabIndex = 4;
             this.label3.Text = "Loading Modules";
             // 
-            // Form1
+            // Splash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -102,7 +102,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.guna2ProgressBar1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Splash";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
