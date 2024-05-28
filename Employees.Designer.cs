@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employees));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.LogoutLbl = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.BilLbl = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.CusLbl = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.EmpLbl = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.ProLbl = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.HomeLbl = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.EmployeesDGV = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -66,6 +66,7 @@
             this.EmpNameTb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.CLosePicture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -78,6 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.EmployeesDGV)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLosePicture)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -85,7 +87,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label7.Location = new System.Drawing.Point(105, 75);
+            this.label7.Location = new System.Drawing.Point(112, 136);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(146, 36);
             this.label7.TabIndex = 33;
@@ -94,87 +96,89 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(21, 58);
+            this.pictureBox7.Location = new System.Drawing.Point(28, 119);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(78, 53);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 32;
             this.pictureBox7.TabStop = false;
             // 
-            // label6
+            // LogoutLbl
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Location = new System.Drawing.Point(105, 699);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 36);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "Logout";
+            this.LogoutLbl.AutoSize = true;
+            this.LogoutLbl.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogoutLbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.LogoutLbl.Location = new System.Drawing.Point(112, 756);
+            this.LogoutLbl.Name = "LogoutLbl";
+            this.LogoutLbl.Size = new System.Drawing.Size(103, 36);
+            this.LogoutLbl.TabIndex = 31;
+            this.LogoutLbl.Text = "Logout";
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(31, 684);
+            this.pictureBox6.Location = new System.Drawing.Point(38, 741);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(68, 51);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 30;
             this.pictureBox6.TabStop = false;
             // 
-            // label5
+            // BilLbl
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(108, 582);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 36);
-            this.label5.TabIndex = 29;
-            this.label5.Text = "Billing";
+            this.BilLbl.AutoSize = true;
+            this.BilLbl.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BilLbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.BilLbl.Location = new System.Drawing.Point(115, 639);
+            this.BilLbl.Name = "BilLbl";
+            this.BilLbl.Size = new System.Drawing.Size(92, 36);
+            this.BilLbl.TabIndex = 29;
+            this.BilLbl.Text = "Billing";
+            this.BilLbl.Click += new System.EventHandler(this.BilLbl_Click);
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(34, 567);
+            this.pictureBox5.Location = new System.Drawing.Point(41, 624);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(68, 51);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 28;
             this.pictureBox5.TabStop = false;
             // 
-            // label4
+            // CusLbl
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(105, 353);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(152, 36);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "Customers";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.CusLbl.AutoSize = true;
+            this.CusLbl.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CusLbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.CusLbl.Location = new System.Drawing.Point(112, 410);
+            this.CusLbl.Name = "CusLbl";
+            this.CusLbl.Size = new System.Drawing.Size(152, 36);
+            this.CusLbl.TabIndex = 27;
+            this.CusLbl.Text = "Customers";
+            this.CusLbl.Click += new System.EventHandler(this.CusLbl_Click);
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(24, 340);
+            this.pictureBox4.Location = new System.Drawing.Point(31, 397);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(75, 59);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 26;
             this.pictureBox4.TabStop = false;
             // 
-            // label3
+            // EmpLbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Navy;
-            this.label3.Location = new System.Drawing.Point(77, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(153, 36);
-            this.label3.TabIndex = 25;
-            this.label3.Text = "Employees";
+            this.EmpLbl.AutoSize = true;
+            this.EmpLbl.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpLbl.ForeColor = System.Drawing.Color.Navy;
+            this.EmpLbl.Location = new System.Drawing.Point(77, 15);
+            this.EmpLbl.Name = "EmpLbl";
+            this.EmpLbl.Size = new System.Drawing.Size(153, 36);
+            this.EmpLbl.TabIndex = 25;
+            this.EmpLbl.Text = "Employees";
+            this.EmpLbl.Click += new System.EventHandler(this.EmpLbl_Click);
             // 
             // pictureBox3
             // 
@@ -186,22 +190,22 @@
             this.pictureBox3.TabIndex = 24;
             this.pictureBox3.TabStop = false;
             // 
-            // label1
+            // ProLbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(105, 269);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 36);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Products";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.ProLbl.AutoSize = true;
+            this.ProLbl.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProLbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.ProLbl.Location = new System.Drawing.Point(112, 326);
+            this.ProLbl.Name = "ProLbl";
+            this.ProLbl.Size = new System.Drawing.Size(128, 36);
+            this.ProLbl.TabIndex = 23;
+            this.ProLbl.Text = "Products";
+            this.ProLbl.Click += new System.EventHandler(this.ProLbl_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(24, 252);
+            this.pictureBox1.Location = new System.Drawing.Point(31, 309);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(68, 53);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -211,28 +215,29 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Lavender;
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.EmpLbl);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Location = new System.Drawing.Point(31, 448);
+            this.panel2.Location = new System.Drawing.Point(38, 505);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(266, 63);
             this.panel2.TabIndex = 21;
             // 
-            // label2
+            // HomeLbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(118, 191);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 36);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Home";
+            this.HomeLbl.AutoSize = true;
+            this.HomeLbl.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeLbl.ForeColor = System.Drawing.Color.White;
+            this.HomeLbl.Location = new System.Drawing.Point(125, 248);
+            this.HomeLbl.Name = "HomeLbl";
+            this.HomeLbl.Size = new System.Drawing.Size(90, 36);
+            this.HomeLbl.TabIndex = 7;
+            this.HomeLbl.Text = "Home";
+            this.HomeLbl.Click += new System.EventHandler(this.HomeLbl_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(31, 174);
+            this.pictureBox2.Location = new System.Drawing.Point(38, 231);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(50, 58);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -252,27 +257,27 @@
             // 
             // EmployeesDGV
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.EmployeesDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.EmployeesDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.EmployeesDGV.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Gulim", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.EmployeesDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Gulim", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.EmployeesDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.EmployeesDGV.ColumnHeadersHeight = 4;
             this.EmployeesDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Gulim", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.EmployeesDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Gulim", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.EmployeesDGV.DefaultCellStyle = dataGridViewCellStyle6;
             this.EmployeesDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.EmployeesDGV.Location = new System.Drawing.Point(39, 451);
             this.EmployeesDGV.Name = "EmployeesDGV";
@@ -495,23 +500,36 @@
             this.pictureBox8.TabIndex = 6;
             this.pictureBox8.TabStop = false;
             // 
+            // CLosePicture
+            // 
+            this.CLosePicture.BackColor = System.Drawing.Color.Transparent;
+            this.CLosePicture.Image = ((System.Drawing.Image)(resources.GetObject("CLosePicture.Image")));
+            this.CLosePicture.Location = new System.Drawing.Point(0, 0);
+            this.CLosePicture.Name = "CLosePicture";
+            this.CLosePicture.Size = new System.Drawing.Size(88, 72);
+            this.CLosePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CLosePicture.TabIndex = 35;
+            this.CLosePicture.TabStop = false;
+            this.CLosePicture.Click += new System.EventHandler(this.CLosePicture_Click);
+            // 
             // Employees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Navy;
-            this.ClientSize = new System.Drawing.Size(1502, 834);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(1502, 936);
+            this.Controls.Add(this.CLosePicture);
+            this.Controls.Add(this.HomeLbl);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.LogoutLbl);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.BilLbl);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.CusLbl);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ProLbl);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -519,6 +537,7 @@
             this.Name = "Employees";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employees";
+            this.Load += new System.EventHandler(this.Employees_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -534,6 +553,7 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLosePicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -543,18 +563,18 @@
 
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label LogoutLbl;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label BilLbl;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label CusLbl;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label EmpLbl;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label ProLbl;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label HomeLbl;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label15;
@@ -575,5 +595,6 @@
         private System.Windows.Forms.Button EditBtn;
         private System.Windows.Forms.Button SaveBtn;
         private System.Windows.Forms.DateTimePicker EmpDOB;
+        private System.Windows.Forms.PictureBox CLosePicture;
     }
 }

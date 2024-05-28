@@ -31,7 +31,12 @@ C:\Users\ca970\Desktop\C#StoreProject\Store\bin\Debug\System.Threading.Tasks.Ext
 C:\Users\ca970\Desktop\C#StoreProject\Store\bin\Debug\System.ValueTuple.xml
 C:\Users\ca970\Desktop\C#StoreProject\Store\obj\Debug\Store.csproj.AssemblyReference.cache
 C:\Users\ca970\Desktop\C#StoreProject\Store\obj\Debug\Store.csproj.SuggestedBindingRedirects.cache
+C:\Users\ca970\Desktop\C#StoreProject\Store\obj\Debug\Store.Billing.resources
+C:\Users\ca970\Desktop\C#StoreProject\Store\obj\Debug\Store.Customer.resources
+C:\Users\ca970\Desktop\C#StoreProject\Store\obj\Debug\Store.Employees.resources
+C:\Users\ca970\Desktop\C#StoreProject\Store\obj\Debug\Store.Homes.resources
 C:\Users\ca970\Desktop\C#StoreProject\Store\obj\Debug\Store.Login.resources
+C:\Users\ca970\Desktop\C#StoreProject\Store\obj\Debug\Store.Products.resources
 C:\Users\ca970\Desktop\C#StoreProject\Store\obj\Debug\Store.Splash.resources
 C:\Users\ca970\Desktop\C#StoreProject\Store\obj\Debug\Store.Properties.Resources.resources
 C:\Users\ca970\Desktop\C#StoreProject\Store\obj\Debug\Store.csproj.GenerateResource.cache
@@ -39,7 +44,3 @@ C:\Users\ca970\Desktop\C#StoreProject\Store\obj\Debug\Store.csproj.CoreCompileIn
 C:\Users\ca970\Desktop\C#StoreProject\Store\obj\Debug\Store.csproj.CopyComplete
 C:\Users\ca970\Desktop\C#StoreProject\Store\obj\Debug\Store.exe
 C:\Users\ca970\Desktop\C#StoreProject\Store\obj\Debug\Store.pdb
-C:\Users\ca970\Desktop\C#StoreProject\Store\obj\Debug\Store.Homes.resources
-C:\Users\ca970\Desktop\C#StoreProject\Store\obj\Debug\Store.Customer.resources
-C:\Users\ca970\Desktop\C#StoreProject\Store\obj\Debug\Store.Employees.resources
-C:\Users\ca970\Desktop\C#StoreProject\Store\obj\Debug\Store.Products.resources

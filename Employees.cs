@@ -164,17 +164,62 @@ namespace Store
             }
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        //private void label4_Click(object sender, EventArgs e)
+        //{
+        //    Customer Obj = new Customer();
+        //    Obj.Show();
+        //    this.Hide();
+        //}
+
+        //private void label1_Click(object sender, EventArgs e)
+        //{
+        //    Products Obj = new Products();
+        //    Obj.Show();
+        //    this.Hide();
+        //}
+        private void HomeLbl_Click(object sender, EventArgs e)
+        {
+            Homes Obj = new Homes();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void ProLbl_Click(object sender, EventArgs e)
+        {
+            Products Obj = new Products();
+            Obj.Show();
+            this.Hide();
+        }
+        private void CusLbl_Click(object sender, EventArgs e)
         {
             Customer Obj = new Customer();
             Obj.Show();
             this.Hide();
         }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void EmpLbl_Click(object sender, EventArgs e)
         {
-            Products Obj = new Products();
+            Employees Obj = new Employees();
             Obj.Show();
+            this.Hide();
+        }
+      
+
+        private void BilLbl_Click(object sender, EventArgs e)
+        {
+            Billing Obj = new Billing();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void CLosePicture_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Employees_Load(object sender, EventArgs e)
+        {
+            Login loginForm = new Login();
+            loginForm.Show();
             this.Hide();
         }
     }

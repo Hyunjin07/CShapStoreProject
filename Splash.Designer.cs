@@ -28,34 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Splash));
-            this.guna2ProgressBar1 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Progressbar = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.PercentageLbl = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Progess = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.Progess)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2ProgressBar1
+            // Progressbar
             // 
-            this.guna2ProgressBar1.BorderRadius = 10;
-            this.guna2ProgressBar1.Location = new System.Drawing.Point(156, 388);
-            this.guna2ProgressBar1.Name = "guna2ProgressBar1";
-            this.guna2ProgressBar1.Size = new System.Drawing.Size(604, 41);
-            this.guna2ProgressBar1.TabIndex = 0;
-            this.guna2ProgressBar1.Text = "guna2ProgressBar1";
-            this.guna2ProgressBar1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 318);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(138, 111);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.Progressbar.BorderRadius = 10;
+            this.Progressbar.Location = new System.Drawing.Point(156, 388);
+            this.Progressbar.Name = "Progressbar";
+            this.Progressbar.Size = new System.Drawing.Size(604, 41);
+            this.Progressbar.TabIndex = 0;
+            this.Progressbar.Text = "guna2ProgressBar1";
+            this.Progressbar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             // 
             // label1
             // 
@@ -68,16 +60,16 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Online Shop Management System";
             // 
-            // label2
+            // PercentageLbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Franklin Gothic Heavy", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(374, 197);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 37);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "%%";
+            this.PercentageLbl.AutoSize = true;
+            this.PercentageLbl.Font = new System.Drawing.Font("Franklin Gothic Heavy", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PercentageLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.PercentageLbl.Location = new System.Drawing.Point(374, 197);
+            this.PercentageLbl.Name = "PercentageLbl";
+            this.PercentageLbl.Size = new System.Drawing.Size(67, 37);
+            this.PercentageLbl.TabIndex = 3;
+            this.PercentageLbl.Text = "%%";
             // 
             // label3
             // 
@@ -90,21 +82,35 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Loading Modules";
             // 
+            // Progess
+            // 
+            this.Progess.Image = ((System.Drawing.Image)(resources.GetObject("Progess.Image")));
+            this.Progess.Location = new System.Drawing.Point(34, 358);
+            this.Progess.Name = "Progess";
+            this.Progess.Size = new System.Drawing.Size(104, 82);
+            this.Progess.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Progess.TabIndex = 5;
+            this.Progess.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Splash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkBlue;
             this.ClientSize = new System.Drawing.Size(806, 465);
+            this.Controls.Add(this.Progess);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.PercentageLbl);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.guna2ProgressBar1);
+            this.Controls.Add(this.Progressbar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Splash";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Progess)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,11 +118,12 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2ProgressBar Progressbar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label PercentageLbl;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox Progess;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
