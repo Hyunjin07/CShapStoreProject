@@ -165,6 +165,7 @@ namespace Store
 
         private void LogoutLbl_Click(object sender, EventArgs e)
         {
+            Program.IsLoggedIn = false;
             Login loginForm = new Login();
             loginForm.Show();
             this.Hide();

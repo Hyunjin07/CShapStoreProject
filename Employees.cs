@@ -164,19 +164,6 @@ namespace Store
             }
         }
 
-        //private void label4_Click(object sender, EventArgs e)
-        //{
-        //    Customer Obj = new Customer();
-        //    Obj.Show();
-        //    this.Hide();
-        //}
-
-        //private void label1_Click(object sender, EventArgs e)
-        //{
-        //    Products Obj = new Products();
-        //    Obj.Show();
-        //    this.Hide();
-        //}
         private void HomeLbl_Click(object sender, EventArgs e)
         {
             Homes Obj = new Homes();
@@ -190,19 +177,20 @@ namespace Store
             Obj.Show();
             this.Hide();
         }
+
         private void CusLbl_Click(object sender, EventArgs e)
         {
             Customer Obj = new Customer();
             Obj.Show();
             this.Hide();
         }
+
         private void EmpLbl_Click(object sender, EventArgs e)
         {
             Employees Obj = new Employees();
             Obj.Show();
             this.Hide();
         }
-      
 
         private void BilLbl_Click(object sender, EventArgs e)
         {
@@ -216,8 +204,11 @@ namespace Store
             Application.Exit();
         }
 
-        private void Employees_Load(object sender, EventArgs e)
+        // Employees_Load 이벤트 핸들러 제거
+
+        private void LogoutLbl_Click(object sender, EventArgs e)
         {
+            Program.IsLoggedIn = false;
             Login loginForm = new Login();
             loginForm.Show();
             this.Hide();

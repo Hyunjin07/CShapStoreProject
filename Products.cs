@@ -213,9 +213,13 @@ namespace Store
 
         private void LogoutLbl_Click(object sender, EventArgs e)
         {
-            Login loginForm = new Login();
-            loginForm.Show();
-            this.Hide();
+        
+            
+                Program.IsLoggedIn = false;
+                Login loginForm = new Login();
+                loginForm.Show();
+                this.Hide();
+            
         }
     }
 }

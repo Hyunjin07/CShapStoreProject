@@ -149,28 +149,28 @@ namespace Store
             Key = 0;
         }
 
-        private void InsertBill()
-        {
-            try
-            {
-                Con.Open();
-                string query = "INSERT INTO BillTbl (BDate, EmpAdd, CustId, CustName, EmpName, Amt) VALUES (@BD, @CI, @CN, @EN, @Am)";
-                SqlCommand cmd = new SqlCommand(query, Con);
-                cmd.Parameters.AddWithValue("@BD", DateTime.Today.Date);
-                cmd.Parameters.AddWithValue("@CI", CustIdCb.SelectedValue.ToString());
-                cmd.Parameters.AddWithValue("@CN", CustNameTb.Text);
-                cmd.Parameters.AddWithValue("@EN", "EmpName"); // 현재 로그인된 직원 이름을 사용하십시오.
-                cmd.Parameters.AddWithValue("@Am", GrdTotal);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Bill Saved");
-                Con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                Con.Close();
-            }
-        }
+        //private void InsertBill()
+        //{
+        //    try
+        //    {
+        //        Con.Open();
+        //        string query = "INSERT INTO BillTbl (BDate, EmpAdd, CustId, CustName, EmpName, Amt) VALUES (@BD, @CI, @CN, @EN, @Am)";
+        //        SqlCommand cmd = new SqlCommand(query, Con);
+        //        cmd.Parameters.AddWithValue("@BD", DateTime.Today.Date);
+        //        cmd.Parameters.AddWithValue("@CI", CustIdCb.SelectedValue.ToString());
+        //        cmd.Parameters.AddWithValue("@CN", CustNameTb.Text);
+        //        cmd.Parameters.AddWithValue("@EN", "EmpName"); // 현재 로그인된 직원 이름을 사용하십시오.
+        //        cmd.Parameters.AddWithValue("@Am", GrdTotal);
+        //        cmd.ExecuteNonQuery();
+        //        MessageBox.Show("Bill Saved");
+        //        Con.Close();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message);
+        //        Con.Close();
+        //    }
+        //}
 
         int prodid, prodqty, prodprice, tottal, pos;
         string prodname;
@@ -210,7 +210,7 @@ namespace Store
 
         private void PrintBtn_Click(object sender, EventArgs e)
         {
-            InsertBill(); // BillTbl에 데이터 삽입
+            //InsertBill(); // BillTbl에 데이터 삽입
             printDocument1.DefaultPageSettings.PaperSize = new PaperSize("pprnm", 285, 600);
             if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
             {
@@ -237,9 +237,9 @@ namespace Store
 
         private void LogoutLbl_Click(object sender, EventArgs e)
         {
+            Program.IsLoggedIn = false;
             Login loginForm = new Login();
             loginForm.Show();
-
             this.Hide();
         }
 
@@ -249,6 +249,8 @@ namespace Store
             Obj.Show();
             this.Hide();
         }
+
+    
 
         private void ProLbl_Click(object sender, EventArgs e)
         {
@@ -277,5 +279,6 @@ namespace Store
             Obj.Show();
             this.Hide();
         }
+
     }
 }
